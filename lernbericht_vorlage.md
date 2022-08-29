@@ -1,22 +1,23 @@
 # Lern-Bericht
-✍️ ggf. Ihr Gruppenname und Ihre Gruppenmitglieder
+von Kevin Frühwirth
 
 ## Einleitung
 
-✍️ Ein Satz, worum es in dem Projekt ging. Muss für einen externen Leser einfach zu verstehen sein.
+Es geht darum wie man die Session-ID mithilfe von JSF anzeigen kann.
 
 ## Was habe ich gelernt?
 
-✍️ Beschreiben Sie in einem Satz **eine** Sache, die Sie bei diesem Projekt gelernt haben und die Sie in diesem Lern-Bericht dokumentieren.
+Ich habe gelernt wie man die SessionID mit Java code generiert und dann in JSF mit xhtml anzeigen kann.
 
 ## Beschreibung
 
-✍️ Verwenden Sie drei verschiedene Medien, um zu zeigen, was Sie gelernt haben. Zum Beispiel:
-
-* Eine textliche Beschreibung
-* Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
-* Ein gut dokumentierter Code-Fetzen
-* Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
+```java
+    public String getSessionID(){
+    FacesContext fCtx = FacesContext.getCurrentInstance();
+    HttpSession session = (HttpSession) fCtx.getExternalContext().getSession(false);
+    return session.getId();    
+    }
+```
 
 ## Verifikation
 
