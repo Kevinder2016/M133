@@ -19,6 +19,9 @@ Ich habe gelernt wie man die SessionID mit Java code generiert und dann in JSF m
     }
 ```
 
+```xhtml
+    <h:outputLabel value="Ihre Sitzung wurde eröffnet #{helloManagedBean.sessionID}"/> 
+```
 ## Verifikation
 
 ✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
