@@ -22,14 +22,18 @@ Ich habe gelernt wie man die SessionID mit Java code generiert und dann in JSF m
 ```xhtml
     <h:outputLabel value="Ihre Sitzung wurde eröffnet #{helloManagedBean.sessionID}"/> 
 ```
+
+![image](https://user-images.githubusercontent.com/69578309/187229314-f7dde777-a861-4c99-8abc-4e4bf0834895.png)
+
+
 ## Verifikation
 
-✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
+Der Screenshot zeigt das die Session ausgegeben wurde. Im java code sieht man wie die SessionID mit einer getter Funktion zurückgegeben wird, diese Information nutzt man dann im xhtml wo diese Funktion aufgerufen wird und die SessionID dann angezeigt wird.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Überlegen Sie sich jeweils etwas, was gut an Ihrer Arbeit lief; 
+👍 Die Arbeit an diesem Projekt ist sehr gut gelaufen, es war alles sehr Verständlich. Der Code für die SessionID Funktion die, die SessionID ausgibt war schon vorgegeben, was die Aufgabe nochmal vereinfachte. Man musste nurnoch den Code richtig implementieren und die getter Funktion im xhtml aufrufen.
 
-👎 und etwas, was nicht gut lief.
+👎 Ich war Anfangs kurz Verwirrt, weil ich nicht gemerkt habe das, das return statement im vorgegebene Code gefehlt hat.
 
-**VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
+**VBV**: Ich möchte mich bei der Fehlersuche in der Zukunft verbessern damit ich direkt erkennen kann was der Fehler ist, wie in diesem Fall das fehlende Return statement.
